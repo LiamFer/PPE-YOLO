@@ -3,10 +3,10 @@ import cv2
 
 
 # Pegando o arquivo
-model_path = r"runs/detect/train/weights/last.pt"
+model_path = r"docollab/train2/weights/last.pt"
 model = YOLO(model_path)
 
 # Source 0 pra usar a webcam
-results = model.predict(source='0',show=True)
+results = model.predict(source='0',show=True, conf=0.7)
 
 print(results)

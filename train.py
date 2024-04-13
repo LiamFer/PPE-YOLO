@@ -1,6 +1,8 @@
 from ultralytics import YOLO
 
 # Carregar o modelo
-model = YOLO("yolov8n.yaml")
+model = YOLO("C:\\Users\\Pichau\\Documents\\studies\\YOLO-DETECTOR\\runs\detect\\100epochs\\weights\\last.pt")
+
 # Treinar
-model.train(data="config.yaml", epochs=100) 
+
+model.train(data="config.yaml", epochs=50) 
